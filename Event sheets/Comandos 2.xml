@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Comandos 2</name>
+    <events>
+        <variable constant="0" name="TempoFase2" sid="311673125875504" static="0" type="number">0</variable>
+        <event-group description="" sid="267057543054662" title="Sistemas Globais">
+            <sub-events>
+                <event-block sid="506619339112557">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="734984324518950" type="System">
+                            <param id="0" name="Interval (seconds)">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="412913805388902" type="System">
+                            <param id="0" name="Variable">TempoFase2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="698333008123107">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="512955318234307" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="438767640185782" type="fundocenario">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="324443930002543" type="navepatrulha">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="514344734051626" type="tiropatrulha">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="357995365558146" type="tirocima">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="788003270224087" type="tiroolhodir">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="787903800230102" type="tiroolhoesq">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="645539038964619" type="tiro">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="298023008195421" type="missile">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="980484802272885" type="vermemaoesq">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="738710982259423" type="vermemaodir">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="403342874500273" type="inimigo3">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="464689933571354" title="Colisões Projéteis com a Nave">
+            <sub-events>
+                <event-block sid="932812535231109">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="165005026129165" type="tirolateral">
+                            <param id="0" name="Object">nave</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="670424016165934" type="nave" />
+                        <action id="-16" name="Wait" sid="995853244362969" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="396247815043718" type="System" />
+                        <action id="-21" name="Reset global variables" sid="401980772841812" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="828883583123688">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="630370705316036" type="tirocima">
+                            <param id="0" name="Object">nave</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="398274350305876" type="nave" />
+                        <action id="-16" name="Wait" sid="746399918233537" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="279506598904606" type="System" />
+                        <action id="-21" name="Reset global variables" sid="486250284342982" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="667564369105878" title="Sistemas das armas laterais">
+            <sub-events>
+                <event-block sid="942216945427978">
+                    <conditions>
+                        <condition behavior="Turret" id="1" name="On shoot" sid="285887560561082" type="armaslaterais" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="738628776122607" type="armaslaterais">
+                            <param id="0" name="Object">tirolateral</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="796333356793756">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="976654922697917" type="System">
+                            <param id="0" name="Interval (seconds)">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="351108291288470" type="armacima">
+                            <param id="0" name="Object">tirocima</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="643550504744589">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="218073178084368" type="System">
+                            <param id="0" name="Variable">TempoFase2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Turret" id="1" name="Add object to target" sid="725402080210817" type="armaslaterais">
+                            <param id="0" name="Target">nave</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="447076871440573" title="Sistema de parada e Chamada de Boss">
+            <sub-events>
+                <event-block sid="925263044695372">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="757480221810604" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-21" name="Reset global variables" sid="819269649327494" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="523478658397906">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="633846845906323" type="System">
+                            <param id="0" name="Variable">TempoFase2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">40</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="548992317055602" type="System">
+                            <param id="0" name="Group name">&quot;Sistemas das armas laterais&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="858139332667775" type="armacima" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="302921671319491" type="armaslaterais" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="216965613396732" title="Tiro da Nave">
+            <sub-events>
+                <event-block sid="258746273802584">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="307704392268889" type="System">
+                            <param id="0" name="Variable">VARcontaTiro</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="534373117258506">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="439825889281876" type="Keyboard">
+                                    <param id="0" name="Key">86 (V)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="831679661622658" type="System">
+                                    <param id="0" name="Variable">VARcontaTiro</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="282371466873236" type="nave">
+                                    <param id="0" name="Object">missile</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="805663135197998">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="774844277242010" type="missile" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="334388027305270" type="System">
+                            <param id="0" name="Variable">VARcontaTiro</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="147426632809742">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="829931784964066" type="Keyboard">
+                            <param id="0" name="Key">67 (C)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="476453398676438" type="nave">
+                            <param id="0" name="Object">tiro</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="649631638064284" type="Audio">
+                            <param id="0" name="Audio file">tiro</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="595873500162156" title="Tirodo Boss + Mão do Boss">
+            <sub-events>
+                <event-block sid="404686875631927">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="376531006002043" type="System">
+                            <param id="0" name="Variable">TempoFase2</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">50</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="424057732992187">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="909602398925754" type="System">
+                                    <param id="0" name="Interval (seconds)">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="782914424833287" type="maoesqr">
+                                    <param id="0" name="Object">vermemaoesq</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="774360415530599" type="maodir">
+                                    <param id="0" name="Object">vermemaodir</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="827491504016272">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="221660537751282" type="System">
+                            <param id="0" name="Variable">TempoFase2</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">45</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="591595454947129">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="355349293251113" type="System">
+                                    <param id="0" name="Interval (seconds)">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="906080185983562" type="Boss2">
+                                    <param id="0" name="Object">tiroolhoesq</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="293748533819711" type="Boss2">
+                                    <param id="0" name="Object">tiroolhodir</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="650025605741351" title="Spawn nave inimiga">
+            <sub-events>
+                <event-block sid="686629952102545">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="571596531754150" type="System">
+                            <param id="0" name="Variable">TempoFase2</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">50</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="728268146664125">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="345909170839034" type="System">
+                                    <param id="0" name="Interval (seconds)">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="531271167746973" type="sensordoolho">
+                                    <param id="0" name="Object">inimigo3</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
