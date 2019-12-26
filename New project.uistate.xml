@@ -16,12 +16,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="1">Historia Fase 1</layout>
         <layout order="6">antes da Fase 2</layout>
         <layout order="8">Fim da Demo</layout>
-        <event-sheet order="7">Comandos 2</event-sheet>
+        <event-sheet active="1" order="7">Comandos 2</event-sheet>
         <event-sheet order="0">Comando da intro</event-sheet>
         <event-sheet order="5">Comandos 1</event-sheet>
         <event-sheet order="3">Comando historia da fase 1</event-sheet>
         <event-sheet order="9">Comandos antes da fase 2</event-sheet>
-        <event-sheet active="1" order="11">Event sheet 1</event-sheet>
+        <event-sheet order="11">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

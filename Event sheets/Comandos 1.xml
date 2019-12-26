@@ -723,5 +723,13 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="537365171808071">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="495307058973343" type="nave" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="359434225749391" type="Audio" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

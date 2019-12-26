@@ -561,5 +561,13 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="569314942983196">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="159084127437078" type="nave" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="545929282503517" type="Audio" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
