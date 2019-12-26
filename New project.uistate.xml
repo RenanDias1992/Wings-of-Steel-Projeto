@@ -23,14 +23,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <families-expanded root="1" />
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/" />
         <folder expanded="0" path="object-folder/Nave e Inimigo/" />
         <folder expanded="0" path="object-folder/Fundo/" />
-        <folder expanded="1" path="object-folder/Geradores/" />
+        <folder expanded="0" path="object-folder/Geradores/" />
         <folder expanded="0" path="object-folder/Tiros/" />
+        <folder expanded="0" path="object-folder/Objetos Espaciais/" />
+        <folder expanded="1" path="object-folder/Boss/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="event-folder/" />
-        <folder expanded="1" path="file-folder/" />
+        <folder expanded="0" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
@@ -49,27 +51,27 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/pltesq/" />
         <folder expanded="1" path="animation-folder/pltdir/" />
         <folder expanded="1" path="animation-folder/sensor/" />
+        <folder expanded="1" path="animation-folder/geradorajuda/" />
+        <folder expanded="1" path="animation-folder/Barrasolida/" />
+        <folder expanded="1" path="animation-folder/sensordoolho/" />
         <folder expanded="1" path="animation-folder/missile/" />
         <folder expanded="1" path="animation-folder/neutronbomb/" />
         <folder expanded="1" path="animation-folder/tiro/" />
         <folder expanded="1" path="animation-folder/tiropatrulha/" />
         <folder expanded="1" path="animation-folder/tiroboss/" />
+        <folder expanded="1" path="animation-folder/tirocima/" />
+        <folder expanded="1" path="animation-folder/tirolateral/" />
+        <folder expanded="1" path="animation-folder/tiroolhodir/" />
+        <folder expanded="1" path="animation-folder/tiroolhoesq/" />
+        <folder expanded="1" path="animation-folder/armacima/" />
+        <folder expanded="1" path="animation-folder/armaslaterais/" />
+        <folder expanded="1" path="animation-folder/Boss2/" />
+        <folder expanded="1" path="animation-folder/vermemaodir/" />
+        <folder expanded="1" path="animation-folder/vermemaoesq/" />
+        <folder expanded="1" path="animation-folder/maodir/" />
+        <folder expanded="1" path="animation-folder/maoesqr/" />
         <folder expanded="1" path="animation-folder/Fundo/" />
         <folder expanded="1" path="animation-folder/gameovertela/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
-        <folder expanded="1" path="animation-folder/geradorajuda/" />
-        <folder expanded="1" path="animation-folder/armaslaterais/" />
-        <folder expanded="1" path="animation-folder/armacima/" />
-        <folder expanded="1" path="animation-folder/Boss2/" />
-        <folder expanded="1" path="animation-folder/solido/" />
-        <folder expanded="1" path="animation-folder/tirolateral/" />
-        <folder expanded="1" path="animation-folder/tirocima/" />
-        <folder expanded="1" path="animation-folder/tiroolhoesq/" />
-        <folder expanded="1" path="animation-folder/tiroolhodir/" />
-        <folder expanded="1" path="animation-folder/maoesqr/" />
-        <folder expanded="1" path="animation-folder/maodir/" />
-        <folder expanded="1" path="animation-folder/vermemaoesq/" />
-        <folder expanded="1" path="animation-folder/vermemaodir/" />
-        <folder expanded="1" path="animation-folder/sensordoolho/" />
     </folders-expanded>
 </c2uistate>
