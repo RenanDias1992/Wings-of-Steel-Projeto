@@ -168,19 +168,11 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="172301790291555" type="nave" />
-                        <action id="-4" name="Set layer visible" sid="670135860121132" type="System">
-                            <param id="0" name="Layer">&quot;Game over&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
                         <action id="-16" name="Wait" sid="637631878729849" type="System">
-                            <param id="0" name="Seconds">10</param>
-                        </action>
-                        <action id="-21" name="Reset global variables" sid="691874056161804" type="System" />
-                        <action id="-4" name="Set layer visible" sid="879434581758310" type="System">
-                            <param id="0" name="Layer">&quot;Game over&quot;</param>
-                            <param id="1" name="Visibility">0</param>
+                            <param id="0" name="Seconds">5</param>
                         </action>
                         <action id="-26" name="Restart layout" sid="339347197593987" type="System" />
+                        <action id="-21" name="Reset global variables" sid="691874056161804" type="System" />
                     </actions>
                 </event-block>
                 <event-block sid="179489588857574">
@@ -190,20 +182,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="801871130571501" type="nave" />
-                        <action id="-4" name="Set layer visible" sid="447453158826691" type="System">
-                            <param id="0" name="Layer">&quot;Game over&quot;</param>
-                            <param id="1" name="Visibility">1</param>
+                        <action id="-9" name="Destroy" sid="244424964437588" type="nave" />
+                        <action id="-16" name="Wait" sid="290090907661434" type="System">
+                            <param id="0" name="Seconds">5</param>
                         </action>
-                        <action id="-16" name="Wait" sid="989305283498147" type="System">
-                            <param id="0" name="Seconds">10</param>
-                        </action>
-                        <action id="-21" name="Reset global variables" sid="957760130410845" type="System" />
-                        <action id="-4" name="Set layer visible" sid="367699466886015" type="System">
-                            <param id="0" name="Layer">&quot;Game over&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-26" name="Restart layout" sid="581149748892489" type="System" />
+                        <action id="-26" name="Restart layout" sid="116551401777984" type="System" />
+                        <action id="-21" name="Reset global variables" sid="622641330976561" type="System" />
                     </actions>
                 </event-block>
                 <event-block sid="598906712429151">
@@ -213,20 +197,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="616796475599378" type="nave" />
-                        <action id="-4" name="Set layer visible" sid="736929954982775" type="System">
-                            <param id="0" name="Layer">&quot;Game over&quot;</param>
-                            <param id="1" name="Visibility">1</param>
+                        <action id="-9" name="Destroy" sid="906125832480636" type="nave" />
+                        <action id="-16" name="Wait" sid="724930159514628" type="System">
+                            <param id="0" name="Seconds">5</param>
                         </action>
-                        <action id="-16" name="Wait" sid="845880653218722" type="System">
-                            <param id="0" name="Seconds">10</param>
-                        </action>
-                        <action id="-21" name="Reset global variables" sid="104054635257850" type="System" />
-                        <action id="-4" name="Set layer visible" sid="627527435108017" type="System">
-                            <param id="0" name="Layer">&quot;Game over&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-26" name="Restart layout" sid="219256443724807" type="System" />
+                        <action id="-26" name="Restart layout" sid="170316751050244" type="System" />
+                        <action id="-21" name="Reset global variables" sid="424371318665248" type="System" />
                     </actions>
                 </event-block>
                 <event-block sid="272384138632932">
@@ -236,20 +212,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="879756332544646" type="nave" />
-                        <action id="-4" name="Set layer visible" sid="786168670845943" type="System">
-                            <param id="0" name="Layer">&quot;Game over&quot;</param>
-                            <param id="1" name="Visibility">1</param>
+                        <action id="-9" name="Destroy" sid="629005154180583" type="nave" />
+                        <action id="-16" name="Wait" sid="204865893021545" type="System">
+                            <param id="0" name="Seconds">5</param>
                         </action>
-                        <action id="-16" name="Wait" sid="947144974845683" type="System">
-                            <param id="0" name="Seconds">10</param>
-                        </action>
-                        <action id="-21" name="Reset global variables" sid="454819921408333" type="System" />
-                        <action id="-4" name="Set layer visible" sid="373565048631076" type="System">
-                            <param id="0" name="Layer">&quot;Game over&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-26" name="Restart layout" sid="498709544773907" type="System" />
+                        <action id="-26" name="Restart layout" sid="210335327711011" type="System" />
+                        <action id="-21" name="Reset global variables" sid="300575427779917" type="System" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -329,19 +297,11 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="403480699248789" type="nave" />
-                        <action id="-4" name="Set layer visible" sid="826002659249677" type="System">
-                            <param id="0" name="Layer">&quot;Game over&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
                         <action id="-16" name="Wait" sid="830294684630295" type="System">
-                            <param id="0" name="Seconds">10</param>
-                        </action>
-                        <action id="-21" name="Reset global variables" sid="107381451034832" type="System" />
-                        <action id="-4" name="Set layer visible" sid="473286030954913" type="System">
-                            <param id="0" name="Layer">&quot;Game over&quot;</param>
-                            <param id="1" name="Visibility">0</param>
+                            <param id="0" name="Seconds">5</param>
                         </action>
                         <action id="-26" name="Restart layout" sid="780267841443791" type="System" />
+                        <action id="-21" name="Reset global variables" sid="107381451034832" type="System" />
                     </actions>
                 </event-block>
                 <event-block sid="201012699813954">
@@ -386,8 +346,9 @@
                         <action id="-16" name="Wait" sid="946130545083807" type="System">
                             <param id="0" name="Seconds">5</param>
                         </action>
+                        <action id="33" name="Stop all" sid="700244837035267" type="Audio" />
                         <action id="-2" name="Go to layout" sid="651675521987814" type="System">
-                            <param id="0" name="Layout">Fase 2</param>
+                            <param id="0" name="Layout">antes da Fase 2</param>
                         </action>
                     </actions>
                 </event-block>
@@ -731,44 +692,6 @@
         </event-group>
         <event-group description="" sid="193051583682843" title="Teclas de Origem">
             <sub-events>
-                <event-block sid="587412039405333">
-                    <conditions>
-                        <condition id="0" name="On key pressed" sid="815726633404893" type="Keyboard">
-                            <param id="0" name="Key">82 (R)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-4" name="Set layer visible" sid="564231564437147" type="System">
-                            <param id="0" name="Layer">&quot;Game over&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-21" name="Reset global variables" sid="619717868277618" type="System" />
-                        <action id="-26" name="Restart layout" sid="134602968959349" type="System" />
-                    </actions>
-                </event-block>
-                <event-block sid="609818625591575">
-                    <conditions>
-                        <condition id="0" name="On key pressed" sid="168597974622663" type="Keyboard">
-                            <param id="0" name="Key">13 (Return)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-4" name="Set layer visible" sid="878173803705685" type="System">
-                            <param id="0" name="Layer">&quot;Tela Inicio&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="678103939671993" type="System">
-                            <param id="0" name="Layer">&quot;Game over&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="177650025893006" type="System">
-                            <param id="0" name="Layer">&quot;Layer 0&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-21" name="Reset global variables" sid="424317223573572" type="System" />
-                        <action id="-26" name="Restart layout" sid="385758037602554" type="System" />
-                    </actions>
-                </event-block>
                 <event-block sid="528521507796529">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="979109595581117" type="Keyboard">
@@ -777,7 +700,7 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="151667104304267" type="System">
-                            <param id="0" name="Layout">Fase 1</param>
+                            <param id="0" name="Layout">Intro</param>
                         </action>
                     </actions>
                 </event-block>
@@ -791,9 +714,9 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Play" sid="288992832520005" type="Audio">
-                            <param id="0" name="Audio file">children-of-the-grave-8-bit</param>
+                            <param id="0" name="Audio file">holy-wars-the-punishment-due</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">10</param>
+                            <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>

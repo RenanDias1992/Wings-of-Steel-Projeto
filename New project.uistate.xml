@@ -10,10 +10,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Fase 1</layout>
+        <layout order="4">Fase 1</layout>
         <layout order="2">Fase 2</layout>
-        <event-sheet order="1">Comandos 1</event-sheet>
-        <event-sheet active="1" order="3">Comandos 2</event-sheet>
+        <layout order="10">Intro</layout>
+        <layout order="1">Historia Fase 1</layout>
+        <layout order="6">antes da Fase 2</layout>
+        <layout order="8">Fim da Demo</layout>
+        <event-sheet order="7">Comandos 2</event-sheet>
+        <event-sheet order="0">Comando da intro</event-sheet>
+        <event-sheet order="5">Comandos 1</event-sheet>
+        <event-sheet order="3">Comando historia da fase 1</event-sheet>
+        <event-sheet order="9">Comandos antes da fase 2</event-sheet>
+        <event-sheet active="1" order="11">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -27,11 +35,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Nave e Inimigo/" />
         <folder expanded="0" path="object-folder/Fundo/" />
         <folder expanded="0" path="object-folder/Geradores/" />
-        <folder expanded="0" path="object-folder/Tiros/" />
+        <folder expanded="1" path="object-folder/Tiros/" />
         <folder expanded="0" path="object-folder/Objetos Espaciais/" />
-        <folder expanded="1" path="object-folder/Boss/" />
+        <folder expanded="0" path="object-folder/Boss/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="0" path="event-folder/" />
+        <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
@@ -53,7 +61,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/sensor/" />
         <folder expanded="1" path="animation-folder/geradorajuda/" />
         <folder expanded="1" path="animation-folder/Barrasolida/" />
-        <folder expanded="1" path="animation-folder/sensordoolho/" />
         <folder expanded="1" path="animation-folder/missile/" />
         <folder expanded="1" path="animation-folder/neutronbomb/" />
         <folder expanded="1" path="animation-folder/tiro/" />
@@ -73,5 +80,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Fundo/" />
         <folder expanded="1" path="animation-folder/gameovertela/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/funddinlho/" />
+        <folder expanded="1" path="animation-folder/capaDaIntro/" />
+        <folder expanded="1" path="animation-folder/spriteantesfase2/" />
+        <folder expanded="1" path="animation-folder/capafim/" />
     </folders-expanded>
 </c2uistate>

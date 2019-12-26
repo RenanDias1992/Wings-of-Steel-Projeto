@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Comando historia da fase 1</name>
+    <events>
+        <event-block sid="666975866596020">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="679858440249504" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="188456631313499" type="Audio">
+                    <param id="0" name="Audio file">hardwired intro</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-5</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="826178356978526">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="577501394729505" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="896812561578921" type="Audio" />
+                <action id="-2" name="Go to layout" sid="872409843381343" type="System">
+                    <param id="0" name="Layout">Fase 1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

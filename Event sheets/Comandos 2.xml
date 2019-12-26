@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Comandos 2</name>
     <events>
-        <variable constant="0" name="LifeBoss2" sid="376054821448837" static="0" type="number">1500</variable>
+        <variable constant="0" name="LifeBoss2" sid="376054821448837" static="0" type="number">1000</variable>
         <variable constant="0" name="TempoFase2" sid="311673125875504" static="0" type="number">0</variable>
         <event-group description="" sid="267057543054662" title="Sistemas Globais">
             <sub-events>
@@ -157,14 +157,6 @@
         </event-group>
         <event-group description="" sid="447076871440573" title="Sistema de parada e Chamada de Boss">
             <sub-events>
-                <event-block sid="925263044695372">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="757480221810604" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-21" name="Reset global variables" sid="819269649327494" type="System" />
-                    </actions>
-                </event-block>
                 <event-block sid="523478658397906">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="633846845906323" type="System">
@@ -254,23 +246,42 @@
                 <event-block sid="207826531548676">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="227858496778140" type="System">
-                            <param id="0" name="Variable">LIFEBOSS</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
+                            <param id="0" name="Variable">LifeBoss2</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">10</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Play" sid="430847467769791" type="Audio">
-                            <param id="0" name="Audio file">destruction boss</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-10</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
                         <action id="-12" name="Set group active" sid="142748757053206" type="System">
                             <param id="0" name="Group name">&quot;Spawn nave inimiga&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
+                        <action id="-9" name="Destroy" sid="660951742361999" type="Boss2" />
+                        <action id="-9" name="Destroy" sid="964452456639742" type="maoesqr" />
+                        <action id="-9" name="Destroy" sid="574462869492796" type="maodir" />
+                        <action id="-16" name="Wait" sid="146362252810468" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="353972239565070" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="781011429859985" type="System">
+                            <param id="0" name="Layout">Fim da Demo</param>
+                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="614249811878021">
+                            <conditions>
+                                <condition id="-19" name="On destroyed" sid="870509929016692" type="Boss2" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="430847467769791" type="Audio">
+                                    <param id="0" name="Audio file">destruction boss</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="404686875631927">
                     <conditions>
@@ -285,7 +296,7 @@
                         <event-block sid="424057732992187">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="909602398925754" type="System">
-                                    <param id="0" name="Interval (seconds)">2</param>
+                                    <param id="0" name="Interval (seconds)">5</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -338,7 +349,7 @@
         </event-group>
         <event-group description="" sid="650025605741351" title="Spawn nave inimiga">
             <sub-events>
-                <event-block sid="686629952102545">
+                <event-block disabled="1" sid="686629952102545">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="571596531754150" type="System">
                             <param id="0" name="Variable">TempoFase2</param>
@@ -348,19 +359,13 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="728268146664125">
+                        <event-block disabled="1" sid="728268146664125">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="345909170839034" type="System">
                                     <param id="0" name="Interval (seconds)">5</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="0" name="Spawn another object" sid="531271167746973" type="sensordoolho">
-                                    <param id="0" name="Object">inimigo3</param>
-                                    <param id="1" name="Layer">0</param>
-                                    <param id="2" name="Image point">0</param>
-                                </action>
-                            </actions>
+                            <actions />
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -368,31 +373,6 @@
         </event-group>
         <event-group description="" sid="484535161970639" title="Dano colisão inimigo com a nave">
             <sub-events>
-                <event-block sid="977442768922430">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="954185300536715" type="inimigo3">
-                            <param id="0" name="Object">nave</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="985138203834562" type="nave" />
-                        <action id="0" name="Play" sid="749962172735032" type="Audio">
-                            <param id="0" name="Audio file">explosion</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-10</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="609770517796734" type="System">
-                            <param id="0" name="Seconds">5</param>
-                        </action>
-                        <action id="-26" name="Restart layout" sid="349884497936331" type="System" />
-                        <action id="-4" name="Set layer visible" sid="973748186649206" type="System">
-                            <param id="0" name="Layer">&quot;Boss&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-21" name="Reset global variables" sid="876951798993645" type="System" />
-                    </actions>
-                </event-block>
                 <event-block sid="399194447906509">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="778331482663461" type="tiroolhodir">
@@ -568,5 +548,18 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="209081813687483">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="242723997548598" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="869078211182725" type="Audio">
+                    <param id="0" name="Audio file">creeping death</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
